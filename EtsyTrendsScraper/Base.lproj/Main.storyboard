@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,35 +19,135 @@
             </objects>
             <point key="canvasLocation" x="1215" y="-29"/>
         </scene>
-        <!--View Controller-->
+        <!--Daily Trends Table View Controller-->
+        <scene sceneID="0h2-ce-fga">
+            <objects>
+                <tableViewController id="grj-RW-upH" customClass="DailyTrendsTableViewController" customModule="EtsyTrendsScraper" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="qjz-0l-37U">
+                        <rect key="frame" x="0.0" y="0.0" width="343" height="571"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="separatorColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="trendCell" rowHeight="100" id="AcR-bR-Id0" customClass="TrendTableViewCell" customModule="EtsyTrendsScraper">
+                                <rect key="frame" x="0.0" y="28" width="343" height="100"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AcR-bR-Id0" id="2m4-F6-QH6">
+                                    <rect key="frame" x="0.0" y="0.0" width="343" height="99.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iZ5-MP-Oxr">
+                                            <rect key="frame" x="25" y="11" width="302" height="78"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="iZ5-MP-Oxr" firstAttribute="bottom" secondItem="2m4-F6-QH6" secondAttribute="bottomMargin" id="7f6-Nz-IhZ"/>
+                                        <constraint firstItem="iZ5-MP-Oxr" firstAttribute="trailing" secondItem="2m4-F6-QH6" secondAttribute="trailingMargin" id="QTF-ps-gyb"/>
+                                        <constraint firstItem="iZ5-MP-Oxr" firstAttribute="leading" secondItem="2m4-F6-QH6" secondAttribute="leadingMargin" constant="9" id="hQ2-Wa-BF6"/>
+                                        <constraint firstItem="iZ5-MP-Oxr" firstAttribute="top" secondItem="2m4-F6-QH6" secondAttribute="topMargin" id="r20-Rs-8dd"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.92156862750000001" green="0.42745098040000001" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="trendLabel" destination="iZ5-MP-Oxr" id="7uo-mO-PYY"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="grj-RW-upH" id="kGY-vX-Jup"/>
+                            <outlet property="delegate" destination="grj-RW-upH" id="NLa-vT-xUX"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xtN-KC-Pfm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="173.59999999999999" y="662.51874062968523"/>
+        </scene>
+        <!--Daily Trends-->
         <scene sceneID="Ngt-kq-khh">
             <objects>
-                <viewController storyboardIdentifier="dailyTrends" id="l7C-66-KyF" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="dailyTrends" title="Daily Trends" id="l7C-66-KyF" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OAi-4o-DfS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="axx-Mg-tp4">
+                                <rect key="frame" x="16" y="76" width="343" height="571"/>
+                                <connections>
+                                    <segue destination="grj-RW-upH" kind="embed" id="2GK-89-8n6"/>
+                                </connections>
+                            </containerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daily Trends" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IVY-57-koD">
+                                <rect key="frame" x="8" y="15" width="359" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="f41-nP-MM5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92156862750000001" green="0.42745098040000001" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="IVY-57-koD" firstAttribute="top" secondItem="OAi-4o-DfS" secondAttribute="topMargin" constant="-5" id="6H9-iD-tWC"/>
+                            <constraint firstItem="axx-Mg-tp4" firstAttribute="leading" secondItem="OAi-4o-DfS" secondAttribute="leadingMargin" id="FdT-Bu-qmO"/>
+                            <constraint firstItem="IVY-57-koD" firstAttribute="leading" secondItem="MNa-cj-qzc" secondAttribute="leading" constant="8" id="HZ7-yg-n3M"/>
+                            <constraint firstAttribute="bottom" secondItem="axx-Mg-tp4" secondAttribute="bottom" constant="20" symbolic="YES" id="K5M-bv-A1a"/>
+                            <constraint firstItem="axx-Mg-tp4" firstAttribute="trailing" secondItem="OAi-4o-DfS" secondAttribute="trailingMargin" id="NUn-r6-CJp"/>
+                            <constraint firstItem="axx-Mg-tp4" firstAttribute="top" secondItem="IVY-57-koD" secondAttribute="bottom" constant="8" symbolic="YES" id="V0b-bH-nzH"/>
+                            <constraint firstItem="IVY-57-koD" firstAttribute="centerX" secondItem="axx-Mg-tp4" secondAttribute="centerX" id="nCP-hT-Jah"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="MNa-cj-qzc"/>
                     </view>
+                    <nil key="simulatedTopBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pxK-en-BYV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="852" y="646"/>
+            <point key="canvasLocation" x="852" y="644.52773613193403"/>
         </scene>
-        <!--View Controller-->
+        <!--Weekly Trends-->
         <scene sceneID="7pi-Pj-jUN">
             <objects>
-                <viewController storyboardIdentifier="weeklyTrends" id="zKh-TV-fNG" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="weeklyTrends" title="Weekly Trends" id="zKh-TV-fNG" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="m1L-2H-ddA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weekly Trends" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mr2-te-Mya">
+                                <rect key="frame" x="8" y="20" width="359" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="mIZ-bU-UbO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coming soon!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rDU-qk-NgZ">
+                                <rect key="frame" x="16" y="323" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92156862745098034" green="0.42745098039215684" blue="0.12549019607843137" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Mr2-te-Mya" firstAttribute="leading" secondItem="kpD-WG-zge" secondAttribute="leading" constant="8" id="6hD-W4-oFS"/>
+                            <constraint firstItem="rDU-qk-NgZ" firstAttribute="centerY" secondItem="m1L-2H-ddA" secondAttribute="centerY" id="Ezp-Au-Ph2"/>
+                            <constraint firstItem="Mr2-te-Mya" firstAttribute="top" secondItem="kpD-WG-zge" secondAttribute="top" id="OK0-Uv-v9d"/>
+                            <constraint firstItem="Mr2-te-Mya" firstAttribute="centerX" secondItem="rDU-qk-NgZ" secondAttribute="centerX" id="Qxp-8M-bTB"/>
+                            <constraint firstItem="rDU-qk-NgZ" firstAttribute="trailing" secondItem="m1L-2H-ddA" secondAttribute="trailingMargin" id="tej-fL-cgX"/>
+                            <constraint firstItem="rDU-qk-NgZ" firstAttribute="leading" secondItem="m1L-2H-ddA" secondAttribute="leadingMargin" id="ymN-Cw-Taw"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="kpD-WG-zge"/>
                     </view>
+                    <nil key="simulatedTopBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ljw-3W-sJ3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1524" y="645"/>
+            <point key="canvasLocation" x="1524" y="644.52773613193403"/>
         </scene>
     </scenes>
 </document>
