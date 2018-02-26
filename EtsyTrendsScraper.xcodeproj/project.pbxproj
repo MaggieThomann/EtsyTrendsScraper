@@ -19,6 +19,7 @@
 		BA9F78A92044A7BA0056972F /* EtsyTrendsScraperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9F78A82044A7BA0056972F /* EtsyTrendsScraperUITests.swift */; };
 		BA9F78B72044A99F0056972F /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9F78B62044A99F0056972F /* PageViewController.swift */; };
 		BA9F78B92044AEF50056972F /* DailyTrendsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9F78B82044AEF50056972F /* DailyTrendsTableViewController.swift */; };
+		BA9F78BB2044B6A80056972F /* EtsyTrends.js in Resources */ = {isa = PBXBuildFile; fileRef = BA9F78BA2044B6A80056972F /* EtsyTrends.js */; };
 		FF128C780C52ABF0CB57B5C7 /* Pods_EtsyTrendsScraperTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E184B0A763212E241C9B1D6 /* Pods_EtsyTrendsScraperTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +64,7 @@
 		BA9F78AA2044A7BA0056972F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA9F78B62044A99F0056972F /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		BA9F78B82044AEF50056972F /* DailyTrendsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyTrendsTableViewController.swift; sourceTree = "<group>"; };
+		BA9F78BA2044B6A80056972F /* EtsyTrends.js */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.javascript; path = EtsyTrends.js; sourceTree = "<group>"; tabWidth = 4; usesTabs = 1; wrapsLines = 1; };
 		CD50A51DC8B04FFB8577C552 /* Pods-EtsyTrendsScraper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EtsyTrendsScraper.release.xcconfig"; path = "Pods/Target Support Files/Pods-EtsyTrendsScraper/Pods-EtsyTrendsScraper.release.xcconfig"; sourceTree = "<group>"; };
 		F3BDB0C3CF1F65484E072941 /* Pods-EtsyTrendsScraperUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EtsyTrendsScraperUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EtsyTrendsScraperUITests/Pods-EtsyTrendsScraperUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -152,6 +154,7 @@
 				BA9F78912044A7B90056972F /* LaunchScreen.storyboard */,
 				BA9F78942044A7B90056972F /* Info.plist */,
 				BA9F788C2044A7B90056972F /* EtsyTrendsScraper.xcdatamodeld */,
+				BA9F78BA2044B6A80056972F /* EtsyTrends.js */,
 			);
 			path = EtsyTrendsScraper;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA9F78932044A7B90056972F /* LaunchScreen.storyboard in Resources */,
+				BA9F78BB2044B6A80056972F /* EtsyTrends.js in Resources */,
 				BA9F78902044A7B90056972F /* Assets.xcassets in Resources */,
 				BA9F788B2044A7B90056972F /* Main.storyboard in Resources */,
 			);

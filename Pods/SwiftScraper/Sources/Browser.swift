@@ -69,6 +69,7 @@ public class Browser: NSObject, WKNavigationDelegate, WKScriptMessageHandler {
         userContentController.addUserScript(coreScript)
 
         let moduleScriptURL = scriptBundle.path(forResource: moduleName, ofType: "js")
+        print("Module Script URL:",moduleScriptURL)
         let moduleScriptContent = try! String(contentsOfFile: moduleScriptURL!)  // TODO: prevent force try, propagate error
         let moduleScript = WKUserScript(source: moduleScriptContent, injectionTime: .atDocumentEnd, forMainFrameOnly: true)
         userContentController.addUserScript(moduleScript)
