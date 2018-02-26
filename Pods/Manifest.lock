@@ -1,0 +1,24 @@
+PODS:
+  - Observable-Swift (0.7.0)
+  - SwiftScraper (0.3.0):
+    - Observable-Swift (~> 0.7)
+
+DEPENDENCIES:
+  - SwiftScraper (from `https://github.com/cweatureapps/SwiftScraper.git`)
+
+EXTERNAL SOURCES:
+  SwiftScraper:
+    :git: https://github.com/cweatureapps/SwiftScraper.git
+
+CHECKOUT OPTIONS:
+  SwiftScraper:
+    :commit: b83a6270f9037ace5a639e3741be5f29d2ad32e8
+    :git: https://github.com/cweatureapps/SwiftScraper.git
+
+SPEC CHECKSUMS:
+  Observable-Swift: 8725f501976e49db368a2cd37277d17a9a51a8aa
+  SwiftScraper: 708bf2b9396fd396f48c379c58c4617dd7cf9dfe
+
+PODFILE CHECKSUM: 23faa7012b041ff48ec12e3655e9e17c538b8d6e
+
+COCOAPODS: 1.4.0

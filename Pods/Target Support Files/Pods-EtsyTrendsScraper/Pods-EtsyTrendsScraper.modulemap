@@ -1,0 +1,6 @@
+framework module Pods_EtsyTrendsScraper {
+  umbrella header "Pods-EtsyTrendsScraper-umbrella.h"
+
+  export *
+  module * { export * }
+}

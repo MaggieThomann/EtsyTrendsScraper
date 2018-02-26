@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B001C60B4D806D737AC1DF99 /* Pods_EtsyTrendsScraperUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A21722865AB3E2AAF64C344E /* Pods_EtsyTrendsScraperUITests.framework */; };
+		B8DC158E27F01C08F184A584 /* Pods_EtsyTrendsScraper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9674DB7EA1094BF967FCBE3C /* Pods_EtsyTrendsScraper.framework */; };
 		BA9F78862044A7B90056972F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9F78852044A7B90056972F /* AppDelegate.swift */; };
 		BA9F78882044A7B90056972F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9F78872044A7B90056972F /* ViewController.swift */; };
 		BA9F788B2044A7B90056972F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA9F78892044A7B90056972F /* Main.storyboard */; };
@@ -15,6 +17,8 @@
 		BA9F78932044A7B90056972F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA9F78912044A7B90056972F /* LaunchScreen.storyboard */; };
 		BA9F789E2044A7BA0056972F /* EtsyTrendsScraperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9F789D2044A7BA0056972F /* EtsyTrendsScraperTests.swift */; };
 		BA9F78A92044A7BA0056972F /* EtsyTrendsScraperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9F78A82044A7BA0056972F /* EtsyTrendsScraperUITests.swift */; };
+		BA9F78B72044A99F0056972F /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9F78B62044A99F0056972F /* PageViewController.swift */; };
+		FF128C780C52ABF0CB57B5C7 /* Pods_EtsyTrendsScraperTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E184B0A763212E241C9B1D6 /* Pods_EtsyTrendsScraperTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D837DA1622DC1CD28FFCB5B /* Pods-EtsyTrendsScraperTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EtsyTrendsScraperTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EtsyTrendsScraperTests/Pods-EtsyTrendsScraperTests.release.xcconfig"; sourceTree = "<group>"; };
+		3CF9120663CA968819DBA629 /* Pods-EtsyTrendsScraperUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EtsyTrendsScraperUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EtsyTrendsScraperUITests/Pods-EtsyTrendsScraperUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5E184B0A763212E241C9B1D6 /* Pods_EtsyTrendsScraperTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EtsyTrendsScraperTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A25FCB01F9CB5EBA32E873E /* Pods-EtsyTrendsScraperTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EtsyTrendsScraperTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EtsyTrendsScraperTests/Pods-EtsyTrendsScraperTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7CEA523924B7897C72DB9D2C /* Pods-EtsyTrendsScraper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EtsyTrendsScraper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EtsyTrendsScraper/Pods-EtsyTrendsScraper.debug.xcconfig"; sourceTree = "<group>"; };
+		9674DB7EA1094BF967FCBE3C /* Pods_EtsyTrendsScraper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EtsyTrendsScraper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A21722865AB3E2AAF64C344E /* Pods_EtsyTrendsScraperUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EtsyTrendsScraperUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA9F78822044A7B90056972F /* EtsyTrendsScraper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EtsyTrendsScraper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA9F78852044A7B90056972F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA9F78872044A7B90056972F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +60,9 @@
 		BA9F78A42044A7BA0056972F /* EtsyTrendsScraperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EtsyTrendsScraperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA9F78A82044A7BA0056972F /* EtsyTrendsScraperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EtsyTrendsScraperUITests.swift; sourceTree = "<group>"; };
 		BA9F78AA2044A7BA0056972F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA9F78B62044A99F0056972F /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		CD50A51DC8B04FFB8577C552 /* Pods-EtsyTrendsScraper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EtsyTrendsScraper.release.xcconfig"; path = "Pods/Target Support Files/Pods-EtsyTrendsScraper/Pods-EtsyTrendsScraper.release.xcconfig"; sourceTree = "<group>"; };
+		F3BDB0C3CF1F65484E072941 /* Pods-EtsyTrendsScraperUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EtsyTrendsScraperUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EtsyTrendsScraperUITests/Pods-EtsyTrendsScraperUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8DC158E27F01C08F184A584 /* Pods_EtsyTrendsScraper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF128C780C52ABF0CB57B5C7 /* Pods_EtsyTrendsScraperTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +86,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B001C60B4D806D737AC1DF99 /* Pods_EtsyTrendsScraperUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11BD88E4429AF7D1B237DB2A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7CEA523924B7897C72DB9D2C /* Pods-EtsyTrendsScraper.debug.xcconfig */,
+				CD50A51DC8B04FFB8577C552 /* Pods-EtsyTrendsScraper.release.xcconfig */,
+				7A25FCB01F9CB5EBA32E873E /* Pods-EtsyTrendsScraperTests.debug.xcconfig */,
+				0D837DA1622DC1CD28FFCB5B /* Pods-EtsyTrendsScraperTests.release.xcconfig */,
+				3CF9120663CA968819DBA629 /* Pods-EtsyTrendsScraperUITests.debug.xcconfig */,
+				F3BDB0C3CF1F65484E072941 /* Pods-EtsyTrendsScraperUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		28705B1251695C19610C9D1D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9674DB7EA1094BF967FCBE3C /* Pods_EtsyTrendsScraper.framework */,
+				5E184B0A763212E241C9B1D6 /* Pods_EtsyTrendsScraperTests.framework */,
+				A21722865AB3E2AAF64C344E /* Pods_EtsyTrendsScraperUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BA9F78792044A7B90056972F = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +123,8 @@
 				BA9F789C2044A7BA0056972F /* EtsyTrendsScraperTests */,
 				BA9F78A72044A7BA0056972F /* EtsyTrendsScraperUITests */,
 				BA9F78832044A7B90056972F /* Products */,
+				11BD88E4429AF7D1B237DB2A /* Pods */,
+				28705B1251695C19610C9D1D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,6 +144,7 @@
 				BA9F78852044A7B90056972F /* AppDelegate.swift */,
 				BA9F78872044A7B90056972F /* ViewController.swift */,
 				BA9F78892044A7B90056972F /* Main.storyboard */,
+				BA9F78B62044A99F0056972F /* PageViewController.swift */,
 				BA9F788F2044A7B90056972F /* Assets.xcassets */,
 				BA9F78912044A7B90056972F /* LaunchScreen.storyboard */,
 				BA9F78942044A7B90056972F /* Info.plist */,
@@ -135,9 +178,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BA9F78AD2044A7BA0056972F /* Build configuration list for PBXNativeTarget "EtsyTrendsScraper" */;
 			buildPhases = (
+				FA73076EC795F347D320AC2B /* [CP] Check Pods Manifest.lock */,
 				BA9F787E2044A7B90056972F /* Sources */,
 				BA9F787F2044A7B90056972F /* Frameworks */,
 				BA9F78802044A7B90056972F /* Resources */,
+				4F8B472D31D9DE0D02E55836 /* [CP] Embed Pods Frameworks */,
+				9300CF062D8692DCFA8A916F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,9 +198,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BA9F78B02044A7BA0056972F /* Build configuration list for PBXNativeTarget "EtsyTrendsScraperTests" */;
 			buildPhases = (
+				D2863DE44F6E6E8A34A88233 /* [CP] Check Pods Manifest.lock */,
 				BA9F78952044A7BA0056972F /* Sources */,
 				BA9F78962044A7BA0056972F /* Frameworks */,
 				BA9F78972044A7BA0056972F /* Resources */,
+				9D1AB54DAFC8562B64D432CB /* [CP] Embed Pods Frameworks */,
+				8FBFE3CFADD28B1D99828AAF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,9 +219,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BA9F78B32044A7BA0056972F /* Build configuration list for PBXNativeTarget "EtsyTrendsScraperUITests" */;
 			buildPhases = (
+				6A6A6286A2281AE195A5C43D /* [CP] Check Pods Manifest.lock */,
 				BA9F78A02044A7BA0056972F /* Sources */,
 				BA9F78A12044A7BA0056972F /* Frameworks */,
 				BA9F78A22044A7BA0056972F /* Resources */,
+				0697FB997AF34D74D878922F /* [CP] Embed Pods Frameworks */,
+				D1D9EEA556EA5D6F7FE12BBF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -257,6 +309,158 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0697FB997AF34D74D878922F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EtsyTrendsScraperUITests/Pods-EtsyTrendsScraperUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4F8B472D31D9DE0D02E55836 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-EtsyTrendsScraper/Pods-EtsyTrendsScraper-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Observable-Swift/Observable.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftScraper/SwiftScraper.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Observable.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftScraper.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EtsyTrendsScraper/Pods-EtsyTrendsScraper-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A6A6286A2281AE195A5C43D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EtsyTrendsScraperUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8FBFE3CFADD28B1D99828AAF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EtsyTrendsScraperTests/Pods-EtsyTrendsScraperTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9300CF062D8692DCFA8A916F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EtsyTrendsScraper/Pods-EtsyTrendsScraper-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D1AB54DAFC8562B64D432CB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EtsyTrendsScraperTests/Pods-EtsyTrendsScraperTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1D9EEA556EA5D6F7FE12BBF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EtsyTrendsScraperUITests/Pods-EtsyTrendsScraperUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2863DE44F6E6E8A34A88233 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EtsyTrendsScraperTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA73076EC795F347D320AC2B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EtsyTrendsScraper-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BA9F787E2044A7B90056972F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -265,6 +469,7 @@
 				BA9F788E2044A7B90056972F /* EtsyTrendsScraper.xcdatamodeld in Sources */,
 				BA9F78882044A7B90056972F /* ViewController.swift in Sources */,
 				BA9F78862044A7B90056972F /* AppDelegate.swift in Sources */,
+				BA9F78B72044A99F0056972F /* PageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +633,7 @@
 		};
 		BA9F78AE2044A7BA0056972F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CEA523924B7897C72DB9D2C /* Pods-EtsyTrendsScraper.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -443,6 +649,7 @@
 		};
 		BA9F78AF2044A7BA0056972F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD50A51DC8B04FFB8577C552 /* Pods-EtsyTrendsScraper.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -458,6 +665,7 @@
 		};
 		BA9F78B12044A7BA0056972F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A25FCB01F9CB5EBA32E873E /* Pods-EtsyTrendsScraperTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -475,6 +683,7 @@
 		};
 		BA9F78B22044A7BA0056972F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D837DA1622DC1CD28FFCB5B /* Pods-EtsyTrendsScraperTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -492,6 +701,7 @@
 		};
 		BA9F78B42044A7BA0056972F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CF9120663CA968819DBA629 /* Pods-EtsyTrendsScraperUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -508,6 +718,7 @@
 		};
 		BA9F78B52044A7BA0056972F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3BDB0C3CF1F65484E072941 /* Pods-EtsyTrendsScraperUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
